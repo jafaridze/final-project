@@ -235,33 +235,28 @@ header {
 .form-block {
   padding: 0px 60px 0px 60px; }
   .form-block .left-form {
-    width: 40%;
-    margin-right: 19px; }
+    width: 40% !important; }
     .form-block .left-form input {
+      border: 1px solid gray !important;
       margin-bottom: 12px;
       height: 42px;
       outline-color: none !important;
-      border: lid red solid grey;
       border-radius: 0px; }
-
-.form-block textarea {
-  height: 150px;
-  outline: none;
-  border-radius: 0px; }
-
-.form-block .left-form {
-  margin-right: 0px; }
-
-.form-block .send {
-  width: 100%;
-  height: 42px;
-  background: #FEC00F;
-  color: #F2F2F2;
-  outline: none;
-  border-radius: 0px; }
-
-.form-block button {
-  margin: 10px 0px 30px 0px; }
+  .form-block .right-form textarea {
+    height: 150px;
+    outline: none;
+    border-radius: 0px;
+    border: 1px solid gray !important; }
+  .form-block .send {
+    width: 100% !important;
+    height: 42px;
+    background: #FEC00F !important;
+    color: #F2F2F2;
+    outline: none;
+    border-radius: 0px; }
+  .form-block button {
+    margin-bottom: 25px;
+    border: 1px solid #FEC00F !important; }
 
 @media only screen and (max-width: 991px) {
   header {
@@ -282,4 +277,6 @@ header {
 
 @media only screen and (max-width: 767px) {
   .text-sm {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+  .send {
+    margin-top: 12px; } }
