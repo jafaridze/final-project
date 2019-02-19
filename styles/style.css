@@ -1,3 +1,4 @@
+@import url(../node_modules/hover.css/css/hover.css);
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -52,7 +53,9 @@ p {
 
 header {
   background-color: #F8BE1A;
-  padding: 0px !important; }
+  padding: 0px !important;
+  position: absolute;
+  z-index: 100000000; }
   header .left-header {
     background: #0E303F;
     padding: 15px 15px !important; }
@@ -74,18 +77,23 @@ header {
   header .right-header {
     background: #F8BE1A; }
 
-.burger-section .col-6 {
-  padding-bottom: 15px; }
-
-.burger-section .burger-item {
-  border-bottom: #0E303F !important;
-  width: 100%; }
-  .burger-section .burger-item a {
-    color: #F8BE1A;
-    font-size: 18px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 13px;
-    text-align: center; }
+.bg-section {
+  position: absolute;
+  top: 86px;
+  background: black;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */ }
+  .bg-section .col-6 {
+    padding-bottom: 15px; }
+  .bg-section .burger-item {
+    border-bottom: #0E303F !important;
+    width: 100%; }
+    .bg-section .burger-item a {
+      color: #F8BE1A;
+      font-size: 20px;
+      padding-bottom: 13px;
+      text-align: center; }
 
 .section-block {
   padding: 0px !important; }
@@ -268,7 +276,6 @@ header {
     border-color: #F8BE1A;
     background: #F8BE1A; }
   .bg-section {
-    background: #0E303F;
     max-width: 974px; } }
 
 @media only screen and (max-width: 980px) {
@@ -279,4 +286,6 @@ header {
   .text-sm {
     padding-top: 0px; }
   .send {
-    margin-top: 12px; } }
+    margin-top: 12px; }
+  .text-block2 div {
+    margin-top: 74px; } }
